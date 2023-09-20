@@ -60,3 +60,17 @@
     @apply bg-background text-foreground font-inter;
   }
 }
+
+@layer components {
+  .blinking-cursor:after { 
+    content: '|';
+    @apply text-zinc-600;
+    animation: blink 1s infinite
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0
+    }
+  }
+}

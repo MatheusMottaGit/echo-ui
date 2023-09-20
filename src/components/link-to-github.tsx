@@ -1,4 +1,4 @@
-import { Github } from 'lucide-react'
+import { ExternalLink, Github } from 'lucide-react'
 import { HoverCard, HoverCardTrigger, HoverCardContent } from './ui/hover-card'
 
 export const GithubLink = () => {
@@ -17,7 +17,10 @@ export const GithubLink = () => {
           <div className='flex flex-col flex-1 gap-1'>
             <h2 className='text-base font-bold'>Matheus Domingues Motta</h2>
 
-            <a href="https://github.com/MatheusMottaGit" className='text-sm underline text-neutral-500'>Acessar Github</a>
+            <a href="https://github.com/MatheusMottaGit" className='text-sm underline text-neutral-500 flex gap-2 items-center'>
+              Acessar Github
+              <ExternalLink className='h-4 w-4' />
+            </a>
           </div>
         </div>
       </HoverCardContent>
