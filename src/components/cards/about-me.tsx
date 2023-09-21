@@ -1,5 +1,4 @@
 import { ArrowRight } from 'lucide-react'
-import React from 'react'
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '../ui/card'
 
 const AboutMeCard = () => {

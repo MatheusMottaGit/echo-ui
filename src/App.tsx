@@ -1,7 +1,6 @@
 import { Blocks, Gavel } from "lucide-react";
 import { ModeToggle } from "./components/toggle-theme";
 import { GithubLink } from "./components/link-to-github";
-import { useState } from "react";
 import { Button } from "./components/ui/button";
 import PortfolioCard from "./components/cards/portfolio-card";
 import AboutMeCard from "./components/cards/about-me";
@@ -39,7 +38,7 @@ export function App() {
           <h1 className="text-5xl">Esta é uma página para</h1>
 
           <span className="text-4xl text-zinc-600 blinking-cursor">
-
+            {/* Typing effect words */}
           </span>
         </div>
 
