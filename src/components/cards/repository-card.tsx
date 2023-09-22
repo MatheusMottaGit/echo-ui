@@ -35,6 +35,8 @@ const RepositoryCard = ({ search }: SearchedRepoProps) => {
     getRepos()
   }, [])
 
+  console.log(repos)
+
   return (
     <>
       {search.length > 0 ? (

@@ -18,7 +18,7 @@ const Projects = () => {
         />
       </div>
 
-      <section className='grid grid-cols-2 gap-3 flex-1'>
+      <section className='grid grid-cols-3 gap-3 flex-1'>
         <RepositoryCard search={search} />
       </section>
     </PagesLayout>
