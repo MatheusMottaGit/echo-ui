@@ -10,7 +10,7 @@ const ContactMeCard = () => {
       </CardHeader>
       <CardContent className='text-zinc-400'>
         <p>
-          De Instagram à Gmail, apresento diversas opções para facilitar a comunicação comigo!
+          Do Instagram ao Gmail, apresento aqui diversas plataformas para facilitar a sua comunicação comigo!
         </p>
       </CardContent>
       <CardFooter>
