@@ -1,20 +1,3 @@
 {
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/"
-    },
-    {
-      "src": "/pages/projects",
-      "dest": "/projects"
-    },
-    {
-      "src": "/pages/aboutme",
-      "dest": "/aboutme"
-    },
-    {
-      "src": "/pages/contact",
-      "dest": "/contact"
-    }
-  ]
+  "rewrites": [{"source": "/(.*)", "destination": "/"}]
 }
