@@ -1,11 +1,16 @@
 import { ExternalLink, Github } from 'lucide-react'
 import { HoverCard, HoverCardTrigger, HoverCardContent } from './ui/hover-card'
+import { useEffect, useState } from 'react'
+import { Button } from './ui/button'
 
 export const GithubLink = () => {
   return (
     <HoverCard>
       <HoverCardTrigger>
-        <Github className='h-5 w-5 cursor-pointer' />
+        <Button variant='outline' className='gap-1'>
+          <Github className='h-4 w-4 cursor-pointer' />
+          Github
+        </Button>
       </HoverCardTrigger>
       <HoverCardContent className='mr-2'>
         <div className='flex gap-4'>

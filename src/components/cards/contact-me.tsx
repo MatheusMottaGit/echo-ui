@@ -3,7 +3,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 
 const ContactMeCard = () => {
   return (
-    <Card className='h-72 cursor-pointer hover:bg-zinc-900/20 hover:transition-colors'>
+    <Card className='h-fit cursor-pointer hover:bg-zinc-900/20 hover:transition-colors col-span-2'>
       <CardHeader>
         <CardTitle>Contatos</CardTitle>
         <CardDescription>Caso tenha se interessado por tudo o que viu, por aqui será possível ver meus contatos!</CardDescription>
@@ -14,7 +14,7 @@ const ContactMeCard = () => {
         </p>
       </CardContent>
       <CardFooter>
-        <a href="/contact" className='flex items-center gap-1 underline'>
+        <a href="/contact" className='flex items-center gap-1 underline text-sm'>
           Acessar página
           <ArrowRight className='w-4 h-4' />
         </a>

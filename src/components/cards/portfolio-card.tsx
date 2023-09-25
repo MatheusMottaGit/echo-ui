@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react'
 
 const PortfolioCard = () => {
   return (
-    <Card className='h-72 cursor-pointer hover:bg-zinc-900/20 hover:transition-colors'>
+    <Card className='h-fit cursor-pointer hover:bg-zinc-900/20 hover:transition-colors'>
       <CardHeader>
         <CardTitle>Meus projetos</CardTitle>
         <CardDescription>Nessa sessão mostro minhas aplicações como desenvolvedor frontend.</CardDescription>
@@ -15,7 +15,7 @@ const PortfolioCard = () => {
         </p>
       </CardContent>
       <CardFooter>
-        <a href="/projects" className='flex items-center gap-1 underline'>
+        <a href="/projects" className='flex items-center gap-1 underline text-sm'>
           Acessar página
           <ArrowRight className='w-4 h-4' />
         </a>
