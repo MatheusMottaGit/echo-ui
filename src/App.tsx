@@ -1,7 +1,7 @@
 import PortfolioCard from "./components/cards/portfolio-card";
 import AboutMeCard from "./components/cards/about-me";
 import ContactMeCard from "./components/cards/contact-me";
-import PagesLayout from "./components/pages-layout";
+import PagesLayout from "./components/layouts/pages-layout";
 
 // const words = [
 //   'Interatividade.',
