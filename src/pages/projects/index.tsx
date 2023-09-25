@@ -1,4 +1,4 @@
-import RepositoryCard from '@/components/cards/repository-card'
+import RepositoriesList from '@/components/repositories-list'
 import PagesLayout from '@/components/pages-layout'
 import { Input } from '@/components/ui/input'
 import { useState } from 'react'
@@ -8,8 +8,8 @@ const Projects = () => {
 
   return (
     <PagesLayout>
-      <div className='flex items-center justify-between'>
-        <h1 className='font-sans font-bold text-4xl'>Meus projetos</h1>
+      <div className='flex items-end justify-between'>
+        <h1 className='font-sans font-bold text-4xl -mt-1'>Meus projetos</h1>
         <Input
           className='w-64 h-9'
           placeholder='Filtrar repositórios...'
@@ -18,8 +18,8 @@ const Projects = () => {
         />
       </div>
 
-      <section className='grid grid-cols-3 gap-3 flex-1'>
-        <RepositoryCard search={search} />
+      <section className='flex-1'>
+        <RepositoriesList search={search} />
       </section>
     </PagesLayout>
   )
