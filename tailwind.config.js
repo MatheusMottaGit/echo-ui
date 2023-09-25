@@ -16,6 +16,11 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        pype: 'url("./assets/pypestore.png")',
+        iron: 'url("./assets/iron.png")',
+        restaurant: 'url("./assets/restaurant.png")'
+      },
       flex: {
         '1-1': '1 1 10px',
         '1-100': '1 1 200px'
