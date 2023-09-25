@@ -5,15 +5,15 @@
       "dest": "/"
     },
     {
-      "src": "/projects",
+      "src": "/pages/projects",
       "dest": "/projects"
     },
     {
-      "src": "/aboutme",
+      "src": "/pages/aboutme",
       "dest": "/aboutme"
     },
     {
-      "src": "/contact",
+      "src": "/pages/contact",
       "dest": "/contact"
     }
   ]
