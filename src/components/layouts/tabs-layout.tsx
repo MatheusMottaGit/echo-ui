@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
-import { Tabs, TabsList, TabsTrigger } from './ui/tabs'
 import { FileCode2, Tag } from 'lucide-react'
+import { Tabs, TabsList, TabsTrigger } from '../ui/tabs'
 
 const TabsLayout = ({ children }: { children: ReactNode }) => {
   return (
@@ -10,8 +10,8 @@ const TabsLayout = ({ children }: { children: ReactNode }) => {
           Principais
           <Tag className='w-4 h-4' />
         </TabsTrigger>
-        <TabsTrigger className='w-full gap-2' value='outros'>
-          Outros
+        <TabsTrigger className='w-full gap-2' value='todos'>
+          Todos
           <FileCode2 className='w-4 h-4' />
         </TabsTrigger>
       </TabsList>

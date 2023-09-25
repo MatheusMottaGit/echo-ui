@@ -1,8 +1,8 @@
 import { Blocks, Gavel } from 'lucide-react'
 import { ReactNode } from 'react'
-import { GithubLink } from './link-to-github'
-import { ModeToggle } from './toggle-theme'
-import { Button } from './ui/button'
+import { GithubLink } from '../link-to-github'
+import { ModeToggle } from '../toggle-theme'
+import { Button } from '../ui/button'
 
 const PagesLayout = ({ children }: { children: ReactNode }) => {  //basically a root layout for all pages
   return (
