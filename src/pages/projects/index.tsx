@@ -1,5 +1,5 @@
+import PagesLayout from '@/components/layouts/pages-layout'
 import RepositoriesList from '@/components/repositories-list'
-import PagesLayout from '@/components/pages-layout'
 import { Input } from '@/components/ui/input'
 import { useState } from 'react'
 
