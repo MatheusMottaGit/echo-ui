@@ -16,6 +16,13 @@ module.exports = {
       },
     },
     extend: {
+      flex: {
+        '1-1': '1 1 10px',
+        '1-100': '1 1 200px'
+      },
+      aspectRatio: {
+        'vertical': '9/16'
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -67,8 +74,8 @@ module.exports = {
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+        "accordion-down": "accordion-down 0.1s ease-out",
+        "accordion-up": "accordion-up 0.1s ease-out",
       },
       fontFamily: {
         inter: ["'Inter'"]
