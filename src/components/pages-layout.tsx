@@ -1,10 +1,10 @@
 import { Blocks, Gavel } from 'lucide-react'
-import React, { ReactNode } from 'react'
+import { ReactNode } from 'react'
 import { GithubLink } from './link-to-github'
 import { ModeToggle } from './toggle-theme'
 import { Button } from './ui/button'
 
-const PagesLayout = ({ children }: { children: ReactNode }) => {
+const PagesLayout = ({ children }: { children: ReactNode }) => {  //basically a root layout for all pages
   return (
     <div className="min-h-screen flex flex-col">
       <div className="flex items-center justify-between border-b px-4 py-2">
@@ -15,8 +15,8 @@ const PagesLayout = ({ children }: { children: ReactNode }) => {
 
         <div className="flex items-center gap-2">
           <Button variant='outline' className="gap-2 mr-3">
-            Tools
             <Gavel className="w-4 h-4" />
+            Ferramentas
           </Button>
 
           <GithubLink />
