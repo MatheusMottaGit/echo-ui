@@ -1,20 +1,18 @@
-import { Card, CardContent, CardTitle } from './ui/card'
+import { Card, CardTitle } from './ui/card'
 import { useGithub } from '@/hooks/useGithub'
 import { TabsContent } from './ui/tabs'
-import { getDate } from '@/lib/date'
 import TabsLayout from './layouts/tabs-layout'
 import { HoverCard, HoverCardContent, HoverCardTrigger } from './ui/hover-card'
 import { Square } from 'lucide-react'
-import * as dayjs from 'dayjs'
 
 interface SearchedRepoProps {
   search: string
 }
 
-const RepositoriesList = ({ search }: SearchedRepoProps) => {
+const RepositoriesList = ({ }: SearchedRepoProps) => {
   const { repos } = useGithub()
 
-  const filteredRepos = search.length > 0 ? repos.filter(repo => repo.name.includes(search)) : []
+  // const filteredRepos = search.length > 0 ? repos.filter(repo => repo.name.includes(search)) : []
 
   return (
     <>
@@ -40,7 +38,7 @@ const RepositoriesList = ({ search }: SearchedRepoProps) => {
 
           <div className='grid grid-cols-10 gap-2'>
             {repos.map(repo => {
-              const repoCreationDate = getDate(repo.created_at)
+              // const repoCreationDate = getDate(repo.created_at)
 
               return (
                 <HoverCard key={repo.id}>
