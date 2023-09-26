@@ -6,6 +6,7 @@ import { BookOpen, Github, Instagram, Linkedin, MousePointerClick } from 'lucide
 import resume from '@/assets/curriculo.png'
 import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card'
 import MailForm from '@/components/mail-form'
+import CoursesCard from '@/components/cards/courses-card'
 
 const contacts = [
   { icon: <Instagram className='h-5 w-5' />, media: 'Instagram', url: 'https://www.instagram.com/o_matheus_motta/', id: 1 },
@@ -43,10 +44,7 @@ const AboutMe = () => {
         </CardHeader>
 
         <CardContent className='grid grid-cols-2 gap-3 flex-1'>
-          <Card className='p-3'>
-            <CardTitle>Formações e cursos</CardTitle>
-            <CardDescription></CardDescription>
-          </Card>
+          <CoursesCard />
 
           <Card className=' row-span-2 p-3'>
             <CardTitle>Sobre mim</CardTitle>
