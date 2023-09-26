@@ -1,4 +1,3 @@
-import React from 'react'
 import { HoverCard, HoverCardContent, HoverCardTrigger } from './ui/hover-card'
 import { Input } from './ui/input'
 import { Button } from './ui/button'
