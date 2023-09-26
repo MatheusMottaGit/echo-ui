@@ -2,8 +2,16 @@ import PagesLayout from '@/components/layouts/pages-layout'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
-import { BookOpen } from 'lucide-react'
+import { BookOpen, Github, Instagram, Linkedin, Mail, MousePointerClick } from 'lucide-react'
 import resume from '@/assets/curriculo.png'
+import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card'
+import MailForm from '@/components/mail-form'
+
+const contacts = [
+  { icon: <Instagram className='h-5 w-5' />, media: 'Instagram', url: 'https://www.instagram.com/o_matheus_motta/', id: 1 },
+  { icon: <Linkedin className='h-5 w-5' />, media: 'Linkedin', url: 'https://www.linkedin.com/in/matheus-domingues-motta-918438257/', id: 2 },
+  { icon: <Github className='h-5 w-5' />, media: 'Github', url: 'https://github.com/MatheusMottaGit', id: 3 }
+]
 
 const AboutMe = () => {
   return (
@@ -14,7 +22,10 @@ const AboutMe = () => {
 
           <span>
             <CardTitle>Matheus Domingues Motta</CardTitle>
-            <CardDescription className='mb-3'>Desenvolvedor, 19 anos</CardDescription>
+            <CardDescription className='mb-5 mt-1 flex items-center gap-1'>
+              <MousePointerClick className='h-5 w-5' />
+              Desenvolvedor frontend, 19 anos
+            </CardDescription>
 
             <Dialog>
               <DialogTrigger>
@@ -33,16 +44,40 @@ const AboutMe = () => {
 
         <CardContent className='grid grid-cols-2 gap-3 flex-1'>
           <Card className='p-3'>
-            <CardTitle>Sobre mim</CardTitle>
-
+            <CardTitle>Formações e cursos</CardTitle>
+            <CardDescription></CardDescription>
           </Card>
 
-          <Card className='row-span-2 p-3'>
-            <CardTitle>Formações e cursos</CardTitle>
+          <Card className=' row-span-2 p-3'>
+            <CardTitle>Sobre mim</CardTitle>
+            <CardDescription className='mt-1'>Atualmente, venho estudando constantemente a área de desenvolvimento web frontend. Desde 2021, quando iniciei, venho contruindo uma base sólida em <strong>HTML, CSS e Javascript</strong>, e, também conhecendo novas ferramentas como o <strong>ReactJs</strong> e <strong>NextJS</strong>. De uns meses pra cá, venho também tentando me familiarizar com o backend, utilizando o <strong>NodeJs</strong>, para me tornar um desenvolvedor full-stack futuramente!</CardDescription>
+
+            <div className='mt-9 grid grid-cols-3 gap-3 flex-1'>
+              {contacts.map(contact => {
+                return (
+                  <HoverCard>
+                    <HoverCardTrigger key={contact.id}>
+                      <Card className='p-2 flex items-center gap-2 cursor-pointer'>
+                        {contact.icon}
+
+                        <span>{contact.media}</span>
+                      </Card>
+                    </HoverCardTrigger>
+
+                    <HoverCardContent>
+
+                    </HoverCardContent>
+                  </HoverCard>
+                )
+              })}
+
+              <MailForm />
+            </div>
           </Card>
 
           <Card className='p-3'>
             <CardTitle>Competências</CardTitle>
+            <CardDescription></CardDescription>
           </Card>
         </CardContent>
       </Card>

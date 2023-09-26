@@ -5,6 +5,7 @@ export interface Repo {
   name: string
   visibilty: string
   created_at: string
+  description: string
 }
 
 interface Github {

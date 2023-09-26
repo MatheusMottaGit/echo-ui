@@ -3,7 +3,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 
 const AboutMeCard = () => {
   return (
-    <Card className='h-fit cursor-pointer hover:bg-zinc-900/20 hover:transition-colors'>
+    <Card className='cursor-pointer hover:bg-zinc-900/20 hover:transition-colors'>
       <CardHeader>
         <CardTitle>Sobre mim</CardTitle>
         <CardDescription>Aqui falarei um pouco sobre mim, minhas motivações, e interesses!</CardDescription>
