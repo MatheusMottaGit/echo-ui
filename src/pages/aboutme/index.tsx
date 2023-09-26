@@ -7,6 +7,7 @@ import resume from '@/assets/curriculo.png'
 import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card'
 import MailForm from '@/components/mail-form'
 import CoursesCard from '@/components/cards/courses-card'
+import SkillsCards from '@/components/cards/skills-cards'
 
 const contacts = [
   { icon: <Instagram className='h-5 w-5' />, media: 'Instagram', url: 'https://www.instagram.com/o_matheus_motta/', id: 1 },
@@ -48,7 +49,7 @@ const AboutMe = () => {
 
           <Card className=' row-span-2 p-3'>
             <CardTitle>Sobre mim</CardTitle>
-            <CardDescription className='mt-1'>Atualmente, venho estudando constantemente a área de desenvolvimento web frontend. Desde 2021, quando iniciei, venho contruindo uma base sólida em <strong>HTML, CSS e Javascript</strong>, e, também conhecendo novas ferramentas como o <strong>ReactJs</strong> e <strong>NextJS</strong>. De uns meses pra cá, venho também tentando me familiarizar com o backend, utilizando o <strong>NodeJs</strong>, para me tornar um desenvolvedor full-stack futuramente!</CardDescription>
+            <CardDescription className='mt-4'>Atualmente, venho estudando constantemente a área de desenvolvimento web frontend. Desde 2021, quando iniciei, venho contruindo uma base sólida em <strong>HTML, CSS e Javascript</strong>, e, também conhecendo novas ferramentas como o <strong>ReactJs</strong> e <strong>NextJS</strong>. De uns meses pra cá, venho também tentando me familiarizar com o backend, utilizando o <strong>NodeJs</strong>, para me tornar um desenvolvedor full-stack futuramente!</CardDescription>
 
             <div className='mt-9 grid grid-cols-3 gap-3 flex-1'>
               {contacts.map(contact => {
@@ -75,7 +76,8 @@ const AboutMe = () => {
 
           <Card className='p-3'>
             <CardTitle>Competências</CardTitle>
-            <CardDescription></CardDescription>
+
+            <SkillsCards />
           </Card>
         </CardContent>
       </Card>
