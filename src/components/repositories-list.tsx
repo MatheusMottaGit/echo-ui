@@ -1,5 +1,4 @@
 import { Card, CardContent, CardDescription, CardTitle } from './ui/card'
-import { useGithub } from '@/hooks/useGithub'
 import { TabsContent } from './ui/tabs'
 import { HoverCard, HoverCardContent, HoverCardTrigger } from './ui/hover-card'
 import { Square } from 'lucide-react'
