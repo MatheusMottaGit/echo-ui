@@ -6,7 +6,6 @@ import { ThemeProvider } from './components/theme-provider.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import AboutMe from './pages/aboutme/index.tsx'
 import Projects from './pages/projects/index.tsx'
-import Contacts from './pages/contact/index.tsx'
 import { GithubProvider } from './contexts/GithubContext.tsx'
 
 const router = createBrowserRouter([
@@ -21,10 +20,6 @@ const router = createBrowserRouter([
   {
     path: '/aboutme',
     element: <AboutMe />
-  },
-  {
-    path: '/contact',
-    element: <Contacts />
   }
 ])
 

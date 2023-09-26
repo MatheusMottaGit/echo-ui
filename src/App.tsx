@@ -1,6 +1,5 @@
 import PortfolioCard from "./components/cards/portfolio-card";
 import AboutMeCard from "./components/cards/about-me";
-import ContactMeCard from "./components/cards/contact-me";
 import PagesLayout from "./components/layouts/pages-layout";
 
 // const words = [
@@ -19,10 +18,10 @@ export function App() {
         </span>
       </div>
 
-      <section className="grid grid-cols-2 gap-3">
+      <section className="grid grid-cols-2 gap-3 flex-1">
         <PortfolioCard />
+
         <AboutMeCard />
-        <ContactMeCard />
       </section>
     </PagesLayout>
   )
