@@ -14,11 +14,6 @@ const PagesLayout = ({ children }: { children: ReactNode }) => {  //basically a 
         </div>
 
         <div className="flex items-center gap-2">
-          <Button variant='outline' className="gap-2 mr-3">
-            <Gavel className="w-4 h-4" />
-            Ferramentas
-          </Button>
-
           <GithubLink />
 
           <ModeToggle />
