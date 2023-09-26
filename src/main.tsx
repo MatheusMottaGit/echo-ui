@@ -6,7 +6,6 @@ import { ThemeProvider } from './components/theme-provider.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import AboutMe from './pages/aboutme/index.tsx'
 import Projects from './pages/projects/index.tsx'
-import { GithubProvider } from './contexts/GithubContext.tsx'
 
 const router = createBrowserRouter([
   {
@@ -25,10 +24,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <GithubProvider>
-      <ThemeProvider>
-        <RouterProvider router={router} />
-      </ThemeProvider>
-    </GithubProvider>
+    <ThemeProvider>
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </React.StrictMode>,
 )
