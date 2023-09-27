@@ -1,8 +1,9 @@
+import MainAppsDialogLayout from '@/components/layouts/main-apps-dialog-layout'
 import PagesLayout from '@/components/layouts/pages-layout'
 import RepositoriesList from '@/components/repositories-list'
 import { Card } from '@/components/ui/card'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { Tag, FileCode2 } from 'lucide-react'
+import { Tag, FileCode2, CopyPlus } from 'lucide-react'
 import { useState, useEffect } from 'react'
 
 export interface Repo {
@@ -45,9 +46,34 @@ const Projects = () => {
         </TabsList>
 
         <TabsContent value='principais' className='grid grid-cols-2 gap-3'>
-          <Card className='p-3 bg-iron bg-cover opacity-50 hover:opacity-70 transition-all'></Card>
-          <Card className='p-3 bg-pype bg-cover row-span-2 opacity-50 hover:opacity-70 transition-all'></Card>
-          <Card className='p-3 bg-restaurant bg-cover opacity-50 hover:opacity-70 transition-all'></Card>
+          <MainAppsDialogLayout
+            title='Iron Gym'
+            description='Landing Page de apresentação de uma academia chamada "Iron Gym".'
+          // video={pypestore}
+          >
+            <Card className='p-3 bg-iron bg-cover h-52'></Card>
+          </MainAppsDialogLayout>
+
+          <MainAppsDialogLayout
+            title='Pypestore'
+            description='Página de um ecommerce de roupas chamado "Pypestore".'
+          // video={pypestore}
+          >
+            <Card className='p-3 bg-pype bg-cover h-52'></Card>
+          </MainAppsDialogLayout>
+
+          <MainAppsDialogLayout
+            title='Restaurant WebPage'
+            description='Página web de apresentação de um restaurante.'
+          // video={restaurant}
+          >
+            <Card className='p-3 bg-restaurant bg-cover h-52'></Card>
+          </MainAppsDialogLayout>
+
+          <div className='w-full border border-dashed rounded-md flex flex-col gap-3 items-center justify-center text-zinc-700'>
+            <CopyPlus className='h-5 w-5' />
+            <span>Novas aplicações em breve...</span>
+          </div>
         </TabsContent>
 
         <RepositoriesList repos={repos} />
