@@ -1,4 +1,4 @@
-import { Blocks, Gavel } from 'lucide-react'
+import { Blocks } from 'lucide-react'
 import { ReactNode } from 'react'
 import { GithubLink } from '../link-to-github'
 import { ModeToggle } from '../toggle-theme'
