@@ -8,21 +8,21 @@ interface DialogProps {
   description: string
 }
 
-const MainAppsDialogLayout = ({ children, title, description }: DialogProps) => {
+const MainAppsDialogLayout = ({ children, video, title, description }: DialogProps) => {
   return (
     <Dialog>
       <DialogTrigger className='hover:opacity-70 transition-all'>
         {children}
       </DialogTrigger>
-      <DialogContent>
+      <DialogContent className='max-w-6xl'>
         <DialogTitle>{title}</DialogTitle>
         <DialogDescription>{description}</DialogDescription>
 
-        {/* <video src={video}
+        <video src={video}
           autoPlay={true}
           controls
           className='h-[505px] w-full'
-        ></video> */}
+        ></video>
       </DialogContent>
     </Dialog>
   )

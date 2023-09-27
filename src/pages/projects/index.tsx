@@ -5,6 +5,7 @@ import { Card } from '@/components/ui/card'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Tag, FileCode2, CopyPlus } from 'lucide-react'
 import { useState, useEffect } from 'react'
+import pypestore from '@/tmp/pypestore.mp4'
 
 export interface Repo {
   id: string
@@ -57,7 +58,7 @@ const Projects = () => {
           <MainAppsDialogLayout
             title='Pypestore'
             description='Página de um ecommerce de roupas chamado "Pypestore".'
-          // video={pypestore}
+            video={pypestore}
           >
             <Card className='p-3 bg-pype bg-cover h-52'></Card>
           </MainAppsDialogLayout>
