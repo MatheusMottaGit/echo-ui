@@ -4,8 +4,8 @@ import { HoverCard, HoverCardContent, HoverCardTrigger } from './ui/hover-card'
 import { Square } from 'lucide-react'
 import { getDate } from '@/lib/date'
 import { Repo } from '@/pages/projects'
-import * as dayjs from 'dayjs'
-import clsx from 'clsx'
+// import * as dayjs from 'dayjs'
+// import clsx from 'clsx'
 
 interface ListRepoProps {
   repos: Repo[]
@@ -44,19 +44,7 @@ const RepositoriesList = ({ repos }: ListRepoProps) => {
             return (
               <HoverCard key={repo.id}>
                 <HoverCardTrigger>
-                  <Card className={clsx('w-24 h-24 cursor-pointer', {
-                    // 'bg-green-400': differenceBetweenDatesMonths === 0,
-                    // 'bg-green-500': differenceBetweenDatesMonths === 1,
-                    // 'bg-green-600': differenceBetweenDatesMonths === 2,
-                    // 'bg-green-700': differenceBetweenDatesMonths === 3,
-                    // 'bg-green-800': differenceBetweenDatesMonths === 4,
-                    // 'bg-green-900': differenceBetweenDatesMonths === 5,
-                    // 'bg-green-900/50': differenceBetweenDatesMonths === 6,
-                    // 'bg-green-400/25': differenceBetweenDatesMonths === 7,
-                    // 'bg-green-400/20': differenceBetweenDatesMonths === 8,
-                    // 'bg-green-400/10': differenceBetweenDatesMonths === 9,
-                    // 'bg-green-400/5': differenceBetweenDatesMonths >= 10,
-                  })}>
+                  <Card className='w-24 h-24 cursor-pointer'>
                   </Card>
                 </HoverCardTrigger>
                 <HoverCardContent>
@@ -75,5 +63,18 @@ const RepositoriesList = ({ repos }: ListRepoProps) => {
 }
 
 export default RepositoriesList
+// clsx('w-24 h-24 cursor-pointer', {
+//   // 'bg-green-400': differenceBetweenDatesMonths === 0,
+//   // 'bg-green-500': differenceBetweenDatesMonths === 1,
+//   // 'bg-green-600': differenceBetweenDatesMonths === 2,
+//   // 'bg-green-700': differenceBetweenDatesMonths === 3,
+//   // 'bg-green-800': differenceBetweenDatesMonths === 4,
+//   // 'bg-green-900': differenceBetweenDatesMonths === 5,
+//   // 'bg-green-900/50': differenceBetweenDatesMonths === 6,
+//   // 'bg-green-400/25': differenceBetweenDatesMonths === 7,
+//   // 'bg-green-400/20': differenceBetweenDatesMonths === 8,
+//   // 'bg-green-400/10': differenceBetweenDatesMonths === 9,
+//   // 'bg-green-400/5': differenceBetweenDatesMonths >= 10,
+// })
 
 
