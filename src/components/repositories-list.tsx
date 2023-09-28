@@ -17,8 +17,8 @@ const RepositoriesList = ({ repos }: ListRepoProps) => {
   return (
     <>
       <TabsContent value='todos' className='flex flex-col gap-5'>
-        <div className='flex items-center justify-between gap-4 text-zinc-400'>
-          <div className='flex gap-5'>
+        <div className='flex items-center justify-between gap-4 text-zinc-400 max-[781px]:flex-col'>
+          <div className='flex gap-5 max-[446px]:flex-col max-[446px]:items-center'>
             <div className='flex items-center gap-1'>
               <Square className='h-4 w-4 bg-green-900/20 text-green-900/5 rounded-sm' />
               Repositórios menos recentes
@@ -35,7 +35,7 @@ const RepositoriesList = ({ repos }: ListRepoProps) => {
           </span>
         </div>
 
-        <div className='grid grid-cols-12 gap-y-3'>
+        <div className='grid grid-cols-12 gap-y-3 max-[1269px]:grid-cols-11 max-[1143px]:grid-cols-10 max-[1080px]:grid-cols-9 max-[940px]:grid-cols-8 max-[843px]:grid-cols-7 max-[769px]:grid-cols-6 max-[781px]:place-items-center max-[642px]:grid-cols-5 max-[546px]:grid-cols-4 max-[416px]:grid-cols-3 max-[320px]:gap-x-5'>
           {repos.map(repo => {
             const repoCreationDate = getDate(repo.created_at)
 
