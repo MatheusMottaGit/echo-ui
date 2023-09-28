@@ -32,7 +32,7 @@ const Projects = () => {
   return (
     <PagesLayout>
       <div className='flex items-end justify-between'>
-        <h1 className='font-sans font-bold text-4xl -mt-1 max-[320px]:ml-9'>Meus projetos</h1>
+        <h1 className='font-sans font-bold text-4xl -mt-1'>Meus projetos</h1>
       </div>
 
       <Tabs className='flex-1' defaultValue='principais'>
@@ -47,29 +47,29 @@ const Projects = () => {
           </TabsTrigger>
         </TabsList>
 
-        <TabsContent value='principais' className='grid grid-cols-2 gap-3'>
+        <TabsContent value='principais' className='grid grid-cols-2 gap-3 min-[1500px]:h-[740px] max-[1440px]:h-[640px] max-[534px]:grid-cols-1'>
           <MainAppsDialogLayout
             title='Iron Gym'
-            description='Landing Page de apresentação de uma academia chamada "Iron Gym".'
+            description='Landing Page de apresentação de uma academia chamada "Iron Gym" feita em NextJs e TailwindCSS.'
           // video={pypestore}
           >
-            <Card className='p-3 bg-iron bg-cover h-52'></Card>
+            <Card className='p-3 bg-iron bg-cover h-full'></Card>
           </MainAppsDialogLayout>
 
           <MainAppsDialogLayout
             title='Pypestore'
-            description='Página de um ecommerce de roupas chamado "Pypestore".'
+            description='Página de um ecommerce de roupas chamado "Pypestore", com layout próprio, feita em ReactJS e TailwindCSS, e ferramentas como JSON Server, Context API, etc.'
             video={pypestore}
           >
-            <Card className='p-3 bg-pype bg-cover h-52'></Card>
+            <Card className='p-3 bg-pype bg-cover h-full'></Card>
           </MainAppsDialogLayout>
 
           <MainAppsDialogLayout
             title='Restaurant WebPage'
-            description='Página web de apresentação de um restaurante.'
+            description='Página web de apresentação de um restaurante, com layout próprio, utilizando apenas HTML e CSS.'
             video={restaurant}
           >
-            <Card className='p-3 bg-restaurant bg-cover h-52'></Card>
+            <Card className='p-3 bg-restaurant bg-cover h-full'></Card>
           </MainAppsDialogLayout>
 
           <div className='w-full border border-dashed rounded-md flex flex-col gap-3 items-center justify-center text-zinc-700'>
