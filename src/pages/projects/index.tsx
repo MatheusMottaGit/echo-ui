@@ -31,7 +31,7 @@ const Projects = () => {
   return (
     <PagesLayout>
       <div className='flex items-end justify-between'>
-        <h1 className='font-sans font-bold text-4xl -mt-1'>Meus projetos</h1>
+        <h1 className='font-sans font-bold text-4xl -mt-1 max-[320px]:ml-6'>Meus projetos</h1>
       </div>
 
       <Tabs className='flex-1' defaultValue='principais'>
