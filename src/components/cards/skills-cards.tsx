@@ -3,7 +3,7 @@ import { Card } from '../ui/card'
 
 const SkillsCards = () => {
   return (
-    <div className='mt-4 grid grid-cols-6 gap-3 text-sm'>
+    <div className='mt-4 grid grid-cols-6 gap-3 text-sm max-[634px]:grid-cols-4 max-[454px]:grid-cols-3 max-[386px]:grid-cols-2'>
       <Card className='flex items-center justify-center px-1 py-2 gap-2 cursor-pointer'>
         <Boxes className='h-5 w-5' />
         <h2>HTML</h2>
