@@ -19,11 +19,11 @@ const AboutMe = () => {
   return (
     <PagesLayout>
       <Card className='flex flex-col flex-1'>
-        <CardHeader className='flex-row gap-4 max-[375px]:flex-col max-[375px]:items-center'>
-          <img src="https://github.com/MatheusMottaGit.png" alt="" className='w-28 rounded-full max-[375px]:w-24 max-[375px]:h-24' />
+        <CardHeader className='flex-row gap-4 max-[415px]:flex-col max-[415px]:items-center'>
+          <img src="https://github.com/MatheusMottaGit.png" alt="" className='w-28 rounded-full max-[415px]:w-24 max-[415px]:h-24' />
 
-          <span className='max-[375px]:text-center'>
-            <CardTitle className='max-[375px]:text-sm max-[375px]:ml-9'>Matheus Domingues Motta</CardTitle>
+          <span className='max-[415px]:text-center'>
+            <CardTitle className='max-[415px]:text-sm max-[415px]:ml-9'>Matheus Domingues Motta</CardTitle>
             <CardDescription className='mb-5 mt-1 flex items-center gap-1'>
               <MousePointerClick className='h-5 w-5' />
               Desenvolvedor frontend, 19 anos
