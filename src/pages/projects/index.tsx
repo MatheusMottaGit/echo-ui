@@ -5,7 +5,8 @@ import { Card } from '@/components/ui/card'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Tag, FileCode2, CopyPlus } from 'lucide-react'
 import { useState, useEffect } from 'react'
-// import pypestore from '@/tmp/pypestore.mp4'
+import pypestore from '@/tmp/pypestore.mp4'
+import restaurant from '@/tmp/restaurant.mp4'
 
 export interface Repo {
   id: string
@@ -31,7 +32,7 @@ const Projects = () => {
   return (
     <PagesLayout>
       <div className='flex items-end justify-between'>
-        <h1 className='font-sans font-bold text-4xl -mt-1 max-[320px]:ml-6'>Meus projetos</h1>
+        <h1 className='font-sans font-bold text-4xl -mt-1 max-[320px]:ml-9'>Meus projetos</h1>
       </div>
 
       <Tabs className='flex-1' defaultValue='principais'>
@@ -58,7 +59,7 @@ const Projects = () => {
           <MainAppsDialogLayout
             title='Pypestore'
             description='Página de um ecommerce de roupas chamado "Pypestore".'
-          // video={pypestore}
+            video={pypestore}
           >
             <Card className='p-3 bg-pype bg-cover h-52'></Card>
           </MainAppsDialogLayout>
@@ -66,7 +67,7 @@ const Projects = () => {
           <MainAppsDialogLayout
             title='Restaurant WebPage'
             description='Página web de apresentação de um restaurante.'
-          // video={restaurant}
+            video={restaurant}
           >
             <Card className='p-3 bg-restaurant bg-cover h-52'></Card>
           </MainAppsDialogLayout>
