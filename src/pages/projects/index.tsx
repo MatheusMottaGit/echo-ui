@@ -7,6 +7,7 @@ import { Tag, FileCode2, CopyPlus } from 'lucide-react'
 import { useState, useEffect } from 'react'
 import pypestore from '@/tmp/pypestore.mp4'
 import restaurant from '@/tmp/restaurant.mp4'
+import ironGym from '@/tmp/ironGym.mp4'
 
 export interface Repo {
   id: string
@@ -52,7 +53,7 @@ const Projects = () => {
             <MainAppsDialogLayout
               title='Iron Gym'
               description='Landing Page de apresentação de uma academia chamada "Iron Gym" feita em NextJs e TailwindCSS.'
-            // video={pypestore}
+              video={ironGym}
             >
               <Card className='p-3 bg-iron bg-cover h-full'></Card>
             </MainAppsDialogLayout>
