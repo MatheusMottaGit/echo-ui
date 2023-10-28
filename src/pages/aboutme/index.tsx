@@ -7,6 +7,7 @@ import resume from '@/assets/curriculo.png'
 import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card'
 import CoursesCard from '@/components/cards/courses-card'
 import SkillsCards from '@/components/cards/skills-cards'
+import { Popover, PopoverTrigger } from '@/components/ui/popover'
 
 const contacts = [
   { icon: <Instagram className='h-5 w-5' />, media: 'Instagram', url: 'https://www.instagram.com/o_matheus_motta/', id: 1 },
@@ -53,19 +54,11 @@ const AboutMe = () => {
             <div className='mt-9 grid grid-cols-3 gap-3 flex-1 max-[596px]:grid-cols-2'>
               {contacts.map(contact => {
                 return (
-                  <HoverCard>
-                    <HoverCardTrigger key={contact.id}>
-                      <Card className='p-2 flex items-center gap-2 cursor-pointer'>
-                        {contact.icon}
+                  <Card key={contact.id} className='p-2 flex items-center gap-2 cursor-pointer'>
+                    {contact.icon}
 
-                        <a href={contact.url}>{contact.media}</a>
-                      </Card>
-                    </HoverCardTrigger>
-
-                    <HoverCardContent>
-
-                    </HoverCardContent>
-                  </HoverCard>
+                    <a href={contact.url}>{contact.media}</a>
+                  </Card>
                 )
               })}
 
