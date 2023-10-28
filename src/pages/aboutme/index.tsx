@@ -5,7 +5,6 @@ import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
 import { BookOpen, Github, Instagram, Linkedin, MousePointerClick } from 'lucide-react'
 import resume from '@/assets/curriculo.png'
 import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card'
-import MailForm from '@/components/mail-form'
 import CoursesCard from '@/components/cards/courses-card'
 import SkillsCards from '@/components/cards/skills-cards'
 
@@ -59,7 +58,7 @@ const AboutMe = () => {
                       <Card className='p-2 flex items-center gap-2 cursor-pointer'>
                         {contact.icon}
 
-                        <span>{contact.media}</span>
+                        <a href={contact.url}>{contact.media}</a>
                       </Card>
                     </HoverCardTrigger>
 
@@ -70,7 +69,7 @@ const AboutMe = () => {
                 )
               })}
 
-              <MailForm />
+              {/* <MailForm /> */}
             </div>
           </Card>
 
