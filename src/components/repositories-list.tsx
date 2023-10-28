@@ -1,12 +1,12 @@
 import { Card, CardContent, CardDescription, CardTitle } from './ui/card'
 import { TabsContent } from './ui/tabs'
-import { HoverCard, HoverCardContent, HoverCardTrigger } from './ui/hover-card'
 import { Square } from 'lucide-react'
 import { getDate } from '@/lib/date'
 import { Repo } from '@/pages/projects'
 import dayjs from 'dayjs'
 import ptBR from 'dayjs/locale/pt-br'
 import clsx from 'clsx'
+import { Popover, PopoverContent, PopoverTrigger } from './ui/popover'
 
 dayjs.locale(ptBR)
 
@@ -33,7 +33,7 @@ const RepositoriesList = ({ repos }: ListRepoProps) => {
           </div>
 
           <span className='italic text-zinc-700 text-sm'>
-            * Passe o mouse por cima dos cards
+            * Use o mouse para clicar nos cards
           </span>
         </div>
 
@@ -44,8 +44,8 @@ const RepositoriesList = ({ repos }: ListRepoProps) => {
             const differenceBetweenDatesMonths = dayjs().diff(repo.created_at, 'month')
 
             return (
-              <HoverCard key={repo.id}>
-                <HoverCardTrigger>
+              <Popover key={repo.id}>
+                <PopoverTrigger>
                   <Card className={clsx('w-24 h-24 cursor-pointer', {
                     'bg-green-400': differenceBetweenDatesMonths === 0,
                     'bg-green-500': differenceBetweenDatesMonths === 1,
@@ -60,14 +60,14 @@ const RepositoriesList = ({ repos }: ListRepoProps) => {
                     'bg-green-400/5': differenceBetweenDatesMonths >= 10,
                   })}>
                   </Card>
-                </HoverCardTrigger>
-                <HoverCardContent>
+                </PopoverTrigger>
+                <PopoverContent>
                   <CardTitle>{repo.name}</CardTitle>
                   <CardDescription>Data de criação: {repoCreationDate}</CardDescription>
 
                   <CardContent className='p-0 mt-4 text-zinc-500'>{repo.description}</CardContent>
-                </HoverCardContent>
-              </HoverCard>
+                </PopoverContent>
+              </Popover>
             )
           })}
         </div>
