@@ -1,9 +1,9 @@
 import PortfolioCard from "./components/cards/portfolio-card";
 import AboutMeCard from "./components/cards/about-me";
 import PagesLayout from "./components/layouts/pages-layout";
-import { Typewriter } from 'react-simple-typewriter'
+import { Typewriter } from "react-simple-typewriter";
 
-const words = ['Portfólio.', 'Interatividade.', 'Experiência.']
+const words = ["Portfólio.", "Interatividade.", "Experiência."];
 
 export function App() {
   return (
@@ -27,5 +27,5 @@ export function App() {
         <AboutMeCard />
       </section>
     </PagesLayout>
-  )
+  );
 }

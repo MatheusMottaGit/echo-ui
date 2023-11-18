@@ -1,26 +1,39 @@
-import { ArrowRight } from 'lucide-react'
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '../ui/card'
+import { ArrowRight } from "lucide-react";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+  CardFooter,
+} from "../ui/card";
 
 const AboutMeCard = () => {
   return (
-    <Card className='cursor-pointer hover:bg-zinc-900/20 hover:transition-colors'>
+    <Card className="cursor-pointer hover:bg-zinc-900/20 hover:transition-colors">
       <CardHeader>
         <CardTitle>Sobre mim</CardTitle>
-        <CardDescription>Aqui falarei um pouco sobre mim, minhas motivações, e interesses!</CardDescription>
+        <CardDescription>
+          Aqui falarei um pouco sobre mim, minhas motivações, e interesses!
+        </CardDescription>
       </CardHeader>
-      <CardContent className='text-zinc-400'>
+      <CardContent className="text-zinc-400">
         <p>
-          Me chamo Matheus, tenho 19 anos, e atualmente estou tentando crescer na área de Desenvolvimento Front-End...
+          Me chamo Matheus, tenho 19 anos, e atualmente estou tentando crescer
+          na área de Desenvolvimento Front-End...
         </p>
       </CardContent>
       <CardFooter>
-        <a href="/aboutme" className='flex items-center gap-1 underline text-sm'>
+        <a
+          href="/aboutme"
+          className="flex items-center gap-1 underline text-sm"
+        >
           Acessar página
-          <ArrowRight className='w-4 h-4' />
+          <ArrowRight className="w-4 h-4" />
         </a>
       </CardFooter>
     </Card>
-  )
-}
+  );
+};
 
-export default AboutMeCard
+export default AboutMeCard;

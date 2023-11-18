@@ -1,15 +1,18 @@
-import { Blocks } from 'lucide-react'
-import { ReactNode } from 'react'
-import { GithubLink } from '../link-to-github'
-import { ModeToggle } from '../toggle-theme'
+import { Blocks } from "lucide-react";
+import { ReactNode } from "react";
+import { GithubLink } from "../link-to-github";
+import { ModeToggle } from "../toggle-theme";
 
-const PagesLayout = ({ children }: { children: ReactNode }) => {  //basically a root layout for all pages
+const PagesLayout = ({ children }: { children: ReactNode }) => {
+  //basically a root layout for all pages
   return (
     <div className="min-h-screen flex flex-col">
       <div className="flex items-center justify-between border-b px-4 py-2 min-[1500px]:px-72">
         <div className="flex items-center gap-2">
           <Blocks className="h-5 w-5" />
-          <h1 className="font-bold font-sans text-lg">echo\ui</h1>
+          <h1 className="font-bold font-sans text-lg">
+            <a href="/">echo\ui</a>
+          </h1>
         </div>
 
         <div className="flex items-center gap-2">
@@ -23,7 +26,7 @@ const PagesLayout = ({ children }: { children: ReactNode }) => {  //basically a 
         {children}
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default PagesLayout
+export default PagesLayout;

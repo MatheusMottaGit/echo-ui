@@ -1,31 +1,43 @@
-import { ReactNode } from 'react'
-import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from '../ui/dialog'
+import { ReactNode } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogTitle,
+  DialogTrigger,
+} from "../ui/dialog";
 
 interface DialogProps {
-  children: ReactNode,
-  video?: string,
-  title: string,
-  description: string
+  children: ReactNode;
+  video?: string;
+  title: string;
+  description: string;
 }
 
-const MainAppsDialogLayout = ({ children, video, title, description }: DialogProps) => {
+const MainAppsDialogLayout = ({
+  children,
+  video,
+  title,
+  description,
+}: DialogProps) => {
   return (
     <Dialog>
-      <DialogTrigger className='hover:opacity-70 transition-all'>
+      <DialogTrigger className="hover:opacity-70 transition-all">
         {children}
       </DialogTrigger>
-      <DialogContent className='max-w-6xl'>
+      <DialogContent className="max-w-6xl">
         <DialogTitle>{title}</DialogTitle>
         <DialogDescription>{description}</DialogDescription>
 
-        <video src={video}
+        <video
+          src={video}
           autoPlay={true}
           controls
-          className='h-[505px] w-full'
+          className="h-[505px] w-full"
         ></video>
       </DialogContent>
     </Dialog>
-  )
-}
+  );
+};
 
-export default MainAppsDialogLayout
+export default MainAppsDialogLayout;
